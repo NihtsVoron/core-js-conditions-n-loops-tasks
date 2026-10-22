@@ -453,7 +453,8 @@ function sortByAsc(arr) {
   function siftDown(start, end) {
     let root = start;
 
-    while (true) {
+    const circle = true;
+    while (circle) {
       const left = 2 * root + 1;
       if (left >= end) break;
 
